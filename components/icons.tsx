@@ -615,7 +615,7 @@ export const PumaIcon = ({ size = 16 }: { size?: number }) => {
     <svg
       height={size}
       strokeLinejoin="round"
-      viewBox="0 0 16 16"
+      viewBox="0 0 337 316"
       width={size}
       style={{ color: 'currentcolor' }}
     >
