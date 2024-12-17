@@ -15,7 +15,7 @@ export const authConfig = {
       const isOnChat = nextUrl.pathname.startsWith('/');
       const isOnRegister = nextUrl.pathname.startsWith('/register');
       const isOnLogin = nextUrl.pathname.startsWith('/login');
-
+      
       if (isLoggedIn && (isOnLogin || isOnRegister)) {
         return Response.redirect(new URL('/', nextUrl as unknown as URL));
       }
@@ -30,6 +30,7 @@ export const authConfig = {
       }
 
       if (isLoggedIn) {
+        console.log('Redirecting to chat, nextUrl: ', new URL('/', nextUrl as unknown as URL));
         return Response.redirect(new URL('/', nextUrl as unknown as URL));
       }
 
